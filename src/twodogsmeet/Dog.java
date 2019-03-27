@@ -39,13 +39,15 @@ public class Dog {
     public void setDogGender(String dgGnd) {
         gender = dgGnd;
     }
+    
     /**
-     * This returns the string value of the 
+     * This returns the dog's gender
      * @return  gender
      */
     public String getDogGender() {
         return gender;
     }
+    
     /**
      * 
      * @param dgAge 
@@ -53,6 +55,7 @@ public class Dog {
     public void setDogAge(int dgAge) {
         age = dgAge;
     }
+    
     /**
      * 
      * @return age
@@ -60,6 +63,7 @@ public class Dog {
     public int getDogAge() {
         return age;
     }
+    
     /**
      * 
      * @param hrlength 
@@ -67,6 +71,7 @@ public class Dog {
     public void setHairlength(int hrlength) {
         hairlength = hrlength;
     }
+    
     /**
      * 
      * @return hairlength
@@ -74,6 +79,23 @@ public class Dog {
     public int getHairlength() {
         return hairlength;
     }
+    
+    /**
+     * 
+     * @param dgColour 
+     */
+    public void setDogCoulour (String dgColour) {
+        colour = dgColour;
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+    public String getDogColour () {
+        return colour;
+    }
+    
     /**
      * This method sets the dog's name
      * @param dgNm 
@@ -81,6 +103,7 @@ public class Dog {
     public void setDogName(String dgNm) { 
         dogName = dgNm;
     }
+    
     /**
      * This method gets the dog's name
      * @return dogName
@@ -96,6 +119,7 @@ public class Dog {
     public int getAggression(){
         return aggression;
     }
+    
     /**
      * This method allows the user to set the aggression of the dog
      * pre: needs an aggression value
@@ -104,6 +128,7 @@ public class Dog {
     public void setAggression(int agg){
         aggression = agg;
     }
+    
     /**
      * This method allows for a dog to friendly bark
      * pre: none
