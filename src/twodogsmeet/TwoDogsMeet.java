@@ -1,6 +1,6 @@
 /*
     Matt Ludwig
-    26 March 2019
+    27 March 2019
  */
 
 package twodogsmeet;
@@ -9,6 +9,7 @@ package twodogsmeet;
  *
  * @author malud0519
  */
+import javax.swing.*;
 public class TwoDogsMeet {
 
     /**
