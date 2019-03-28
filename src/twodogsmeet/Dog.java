@@ -10,17 +10,25 @@ public class Dog {
 
     //constructors
     public Dog() {
-        dogName = "Rufus Doe";
+        dogName = "Rufus";
         dogBreed = "Unknown Breed";
         aggression = 0;
         hunger = 0;
     }
 
-    public Dog(String dgName, String dgBreed, int agg, int hung) {
+    public Dog(String dgName, String dgBreed, String gndr, String clr, int agg, int hung, 
+        int dgage, int hrlength) {
         dogName = dgName;
+        gender = gndr;
+        colour = clr;
         dogBreed = dgBreed;
+        agg = (int) Math.random()*10;
         aggression = agg;
+        hung = (int) Math.random()* 10;
         hunger = hung;
+        dgage = (int) Math.random()*14;
+        age = dgage;
+        hairlength = hrlength;
     }
 
     //Alternate constructor
@@ -127,6 +135,12 @@ public class Dog {
      */
     public void setAggression(int agg){
         aggression = agg;
+    }
+    public void setDogBreed(String breed) {
+        dogBreed = breed;
+    }
+    public String getDogBreed() {
+        return dogBreed;
     }
     
     /**
