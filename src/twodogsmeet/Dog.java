@@ -1,3 +1,8 @@
+/*
+    Matt Ludwig
+    28 March 2019
+    This is the class which holds the information of various dogs
+*/
 
 package twodogsmeet;
 
@@ -6,7 +11,7 @@ public class Dog {
 
     private String dogName, dogBreed, gender, colour;
     private int aggression, hunger, age, hairlength ;
-    //aggression = 5; this is bad :(
+    
 
     //constructors
     public Dog() {
@@ -17,17 +22,16 @@ public class Dog {
     }
 
     public Dog(String dgName, String dgBreed, String gndr, String clr, int agg, int hung, 
-        int dgage, int hrlength) {
+        int dAge, int hrlength) {
         dogName = dgName;
         gender = gndr;
         colour = clr;
         dogBreed = dgBreed;
-        agg = (int) Math.random()*10;
+        agg = (int) (Math.random()*9)+ 1;
         aggression = agg;
-        hung = (int) Math.random()* 10;
+        hung = (int) (Math.random()* 9) + 1;
         hunger = hung;
-        dgage = (int) Math.random()*14;
-        age = dgage;
+        age = dAge;
         hairlength = hrlength;
     }
 
@@ -58,10 +62,11 @@ public class Dog {
     
     /**
      * 
-     * @param dgAge 
+     * @param dAge 
      */
-    public void setDogAge(int dgAge) {
-        age = dgAge;
+    public void setDogAge(int dAge) {
+        dAge = (int)(Math.random()* 13) + 1;
+        age = dAge;
     }
     
     /**
@@ -100,7 +105,7 @@ public class Dog {
      * 
      * @return 
      */
-    public String getDogColour () {
+    public String getDogColour() {
         return colour;
     }
     
@@ -110,6 +115,12 @@ public class Dog {
      */
     public void setDogName(String dgNm) { 
         dogName = dgNm;
+    }
+    public void setHunger(int hgr) {
+        hunger = hgr;
+    }
+    public int getHunger() {
+        return hunger;
     }
     
     /**
@@ -167,6 +178,7 @@ public class Dog {
         output += "Breed: " + dogBreed + "\n";
         output += "Aggression: " + aggression + "\n";
         output += "Hunger: " + hunger;
+        output += "Age: " + age;
         //output string is complete, return it
         return output;
     }
