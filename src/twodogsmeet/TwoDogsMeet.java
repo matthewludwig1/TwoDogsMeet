@@ -1,6 +1,6 @@
 /*
     Matt Ludwig
-    28 March 2019
+    29 March 2019
  */
 
 package twodogsmeet;
@@ -66,11 +66,14 @@ public class TwoDogsMeet {
             }
             else { // proceeds to the dog meeting
                 
-                if (dog1.getAggression() >= dog2.getAggression()) { 
+                if (dog1.getAggression() > dog2.getAggression()) { 
                     
-                    if (dog1.getHunger() >= dog2.getHunger()) {
+                    if (dog1.getHunger() > dog2.getHunger()) {
                         JOptionPane.showMessageDialog(null, dog1.getDogName() + " stole " + dog2.getDogName()+ "'s "
                         + "food.");
+                    }
+                    else if (dog1.getHunger()== dog2.getHunger()) {
+                        JOptionPane.showMessageDialog(null,dog1.getDogName() + " ran after " + dog2.getDogName());
                     }
                     
                     
